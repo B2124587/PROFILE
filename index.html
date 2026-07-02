@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beyar Bilonda — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Book Spine / Navigation -->
+<nav class="book-spine">
+  <div class="spine-logo">BB</div>
+  <ul class="spine-chapters">
+    <li><button class="chapter-btn active" data-target="cover">Cover</button></li>
+    <li><button class="chapter-btn" data-target="about">About</button></li>
+    <li><button class="chapter-btn" data-target="skills">Skills</button></li>
+    <li><button class="chapter-btn" data-target="projects">Projects</button></li>
+    <li><button class="chapter-btn" data-target="education">Education</button></li>
+    <li><button class="chapter-btn" data-target="contact">Contact</button></li>
+  </ul>
+  <div class="spine-progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+</nav>
+
+<!-- Main Book Content -->
+<main class="book-main">
+
+  <!-- PAGE: Cover -->
+  <section class="page" id="cover">
+    <div class="page-inner cover-page">
+      <div class="cover-grid">
+        <div class="cover-text">
+          <div class="cover-eyebrow">
+            <span class="dot-accent"></span>
+            Portfolio · 2026
+          </div>
+          <h1 class="cover-name">
+            <span class="name-first">Beyar</span>
+            <span class="name-last">Bilonda</span>
+          </h1>
+          <div class="cover-title-bar">
+            <span class="cover-role">Computer Science</span>
+            <span class="cover-divider">·</span>
+            <span class="cover-year">3rd Year</span>
+          </div>
+          <p class="cover-tagline">
+            Building intelligent systems. Designing reliable software. Solving real problems.
+          </p>
+          <div class="cover-cta">
+            <button class="btn-primary" onclick="scrollToPage('about')">Open Portfolio</button>
+            <a href="#contact" class="btn-ghost" onclick="scrollToPage('contact')">Get in Touch</a>
+          </div>
+        </div>
+        <div class="cover-visual">
+          <div class="orb-container">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+            <div class="code-float cf-1"><span class="code-kw">class</span> Beyar <span class="code-bracket">{</span></div>
+            <div class="code-float cf-2">role <span class="code-op">=</span> <span class="code-str">"Developer"</span><span class="code-punct">;</span></div>
+            <div class="code-float cf-3">passion <span class="code-op">=</span> <span class="code-str">"Innovation"</span><span class="code-punct">;</span></div>
+            <div class="code-float cf-4"><span class="code-fn">build</span><span class="code-bracket">()</span> <span class="code-bracket">{</span> ... <span class="code-bracket">}</span></div>
+            <div class="code-float cf-5"><span class="code-bracket">}</span></div>
+            <div class="avatar-ring">
+              <div class="avatar-inner">
+                <img src="images/IMG-20260629-WA0007.jpeg" alt="Beyar Bilonda" class="avatar-img" />
+                <span class="avatar-initials" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cover-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: About -->
+  <section class="page" id="about">
+    <div class="page-inner">
+      <div class="page-header">
+        <span class="chapter-label">Chapter 01</span>
+        <h2 class="page-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p class="bio-lead">
+            I'm a third-year Computer Science student at Copperbelt University, passionate about crafting elegant solutions to complex problems.
+          </p>
+          <p class="bio-body">
+            My journey in technology spans systems design, machine learning, full-stack development, and cybersecurity. I thrive at the intersection of theory and practice — from designing fraud detection systems to building responsive web platforms.
+          </p>
+          <p class="bio-body">
+            At CBU, I've led and contributed to multidisciplinary team projects, honing both my technical depth and collaborative mindset. I believe great software is not just functional — it's thoughtful.
+          </p>
+          <div class="about-badges">
+            <span class="badge">🎓 CBU · Group 20</span>
+            <span class="badge">🤖 ML Enthusiast</span>
+            <span class="badge">🔐 Security-Focused</span>
+            <span class="badge">🌍 Zambia &amp; SA</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">3rd</div>
+            <div class="stat-label">Year of Study</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">4</div>
+            <div class="stat-label">Languages Mastered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Drive to Learn</div>
+          </div>
+          <div class="about-quote">
+            <blockquote>
+              "Code is the closest thing we have to a superpower."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: Skills -->
+  <section class="page" id="skills">
+    <div class="page-inner">
+      <div class="page-header">
+        <span class="chapter-label">Chapter 02</span>
+        <h2 class="page-title">Skills &amp; Expertise</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="88">
+              <div class="skill-name"><span>Python</span><span class="skill-pct">88%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="80">
+              <div class="skill-name"><span>JavaScript</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="75">
+              <div class="skill-name"><span>PHP</span><span class="skill-pct">75%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-name"><span>Java</span><span class="skill-pct">70%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="65">
+              <div class="skill-name"><span>SQL</span><span class="skill-pct">65%</span></div>
+              <div class="skill-track"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frameworks &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Docker</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">SQLAlchemy</span>
+            <span class="tag">JWT Auth</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Git</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Domains</h3>
+          <div class="domain-list">
+            <div class="domain-item">
+              <span class="domain-icon">🧠</span>
+              <div>
+                <div class="domain-name">Machine Learning</div>
+                <div class="domain-desc">Classification, SMOTE, model retraining pipelines</div>
+              </div>
+            </div>
+            <div class="domain-item">
+              <span class="domain-icon">🔐</span>
+              <div>
+                <div class="domain-name">Cybersecurity &amp; Fraud Detection</div>
+                <div class="domain-desc">RBAC, risk scoring, compliance reporting</div>
+              </div>
+            </div>
+            <div class="domain-item">
+              <span class="domain-icon">🌐</span>
+              <div>
+                <div class="domain-name">Full-Stack Web Development</div>
+                <div class="domain-desc">REST APIs, SPAs, admin panels, responsive UI</div>
+              </div>
+            </div>
+            <div class="domain-item">
+              <span class="domain-icon">🏗️</span>
+              <div>
+                <div class="domain-name">Systems Design &amp; OOP</div>
+                <div class="domain-desc">UML, OOAD, design patterns, architecture</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: Projects -->
+  <section class="page" id="projects">
+    <div class="page-inner">
+      <div class="page-header">
+        <span class="chapter-label">Chapter 03</span>
+        <h2 class="page-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-card-header">
+            <div class="project-meta">
+              <span class="project-tag tag-ml">ML · Security</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">🛡️</div>
+          </div>
+          <h3 class="project-title">Zambia Mobile Money Fraud Detection System</h3>
+          <p class="project-desc">
+            Production-ready fraud detection platform for MTN MoMo, Airtel Money & Zamtel Kwacha. Features 4 ML models, composite risk scoring with 9 Zambian fraud indicators, JWT/RBAC auth, BoZ compliance reports, and Docker Compose deployment.
+          </p>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>XGBoost</span><span>MySQL</span><span>Docker</span>
+          </div>
+          <div class="project-highlights">
+            <div class="highlight">50K synthetic transactions</div>
+            <div class="highlight">18 REST endpoints</div>
+            <div class="highlight">4 ML models</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-meta">
+              <span class="project-tag tag-web">Full-Stack</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">🏢</div>
+          </div>
+          <h3 class="project-title">Golden Power Security — Corporate Website</h3>
+          <p class="project-desc">
+            Full-stack corporate website for GPS Security &amp; Cleaning Services with a PHP/MySQL backend, standalone admin panel, inquiry management, service listings, and a company profile PDF section.
+          </p>
+          <div class="project-tech">
+            <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>CSS3</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-meta">
+              <span class="project-tag tag-design">Systems</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">📐</div>
+          </div>
+          <h3 class="project-title">CS301 Systems Design — Group 20</h3>
+          <p class="project-desc">
+            Led Group 20 under Mrs. Daka in designing and implementing a complete software system with OOAD class diagrams, UML modeling, and full documentation aligned to CBU CS301 coursework.
+          </p>
+          <div class="project-tech">
+            <span>UML</span><span>OOAD</span><span>Python</span><span>SQLAlchemy</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-header">
+            <div class="project-meta">
+              <span class="project-tag tag-api">API</span>
+              <span class="project-year">2025</span>
+            </div>
+            <div class="project-icon">⚡</div>
+          </div>
+          <h3 class="project-title">REST API Backend — Node.js/Express</h3>
+          <p class="project-desc">
+            Robust Express.js backend with JWT authentication, RBAC middleware, mailer integration, and 7-tab admin dashboard. Resolved Express 5 path-to-regexp compatibility issues and circular dependency bugs.
+          </p>
+          <div class="project-tech">
+            <span>Node.js</span><span>Express</span><span>JWT</span><span>MySQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: Education -->
+  <section class="page" id="education">
+    <div class="page-inner">
+      <div class="page-header">
+        <span class="chapter-label">Chapter 04</span>
+        <h2 class="page-title">Education &amp; Background</h2>
+      </div>
+      <div class="education-layout">
+        <div class="edu-main">
+          <div class="edu-card active-edu">
+            <div class="edu-year-badge">2023 — Present</div>
+            <div class="edu-content">
+              <div class="edu-school">Copperbelt University</div>
+              <div class="edu-degree">Bachelor of Science in Computer Science</div>
+              <div class="edu-location">📍 Kitwe, Zambia</div>
+              <p class="edu-desc">
+                Currently in my third year, studying core areas of software engineering, systems design, algorithms, data structures, and machine learning. Active member of Group 20 under CS301 Systems Design.
+              </p>
+              <div class="edu-modules">
+                <span class="module">Systems Design</span>
+                <span class="module">Algorithms</span>
+                <span class="module">Machine Learning</span>
+                <span class="module">Database Systems</span>
+                <span class="module">Software Engineering</span>
+                <span class="module">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-sidebar">
+          <div class="cert-section">
+            <h3>Interests &amp; Goals</h3>
+            <div class="goal-item">
+              <span class="goal-icon">🎯</span>
+              <div>
+                <div class="goal-title">Fintech &amp; Security</div>
+                <div class="goal-sub">Building fraud-resilient financial systems for African markets</div>
+              </div>
+            </div>
+            <div class="goal-item">
+              <span class="goal-icon">🤖</span>
+              <div>
+                <div class="goal-title">AI &amp; Machine Learning</div>
+                <div class="goal-sub">Applied ML for real-world data problems</div>
+              </div>
+            </div>
+            <div class="goal-item">
+              <span class="goal-icon">🌍</span>
+              <div>
+                <div class="goal-title">Pan-African Tech</div>
+                <div class="goal-sub">Building digital infrastructure across Zambia and South Africa</div>
+              </div>
+            </div>
+            <div class="goal-item">
+              <span class="goal-icon">🚀</span>
+              <div>
+                <div class="goal-title">Entrepreneurship</div>
+                <div class="goal-sub">From developer to founder — building products that matter</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="id-card">
+            <div class="id-label">Student Record</div>
+            <div class="id-row"><span>ID</span><span class="id-val">23124587</span></div>
+            <div class="id-row"><span>Program</span><span class="id-val">BSc CS</span></div>
+            <div class="id-row"><span>Year</span><span class="id-val">3rd Year</span></div>
+            <div class="id-row"><span>Supervisor</span><span class="id-val">Mrs. Daka</span></div>
+            <div class="id-row"><span>Group</span><span class="id-val">Group 20</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: Contact -->
+  <section class="page" id="contact">
+    <div class="page-inner">
+      <div class="page-header">
+        <span class="chapter-label">Chapter 05</span>
+        <h2 class="page-title">Let's Connect</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <p class="contact-intro">
+            I'm open to internships, collaborative projects, and meaningful conversations about technology, innovation, and building for Africa's digital future.
+          </p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:beyar.bilonda@cbu.ac.zm">
+              <span class="cl-icon">✉️</span>
+              <div>
+                <div class="cl-label">Email</div>
+                <div class="cl-val">beyarfaith@gmail.com</div>
+              </div>
+            </a>
+            <a class="contact-link" href="#">
+              <span class="cl-icon">💼</span>
+              <div>
+                <div class="cl-label">LinkedIn</div>
+                <div class="cl-val">Beyar Bilonda</div>
+              </div>
+            </a>
+            <a class="contact-link" href="#">
+              <span class="cl-icon">🐙</span>
+              <div>
+                <div class="cl-label">GitHub</div>
+                <div class="cl-val">@B2124587</div>
+              </div>
+            </a>
+            <div class="contact-link">
+              <span class="cl-icon">📍</span>
+              <div>
+                <div class="cl-label">Location</div>
+                <div class="cl-val">Zambia </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Doe" id="formName"/>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="you@email.com" id="formEmail"/>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Hello Beyar, I'd love to connect about..." id="formMsg" rows="4"></textarea>
+            </div>
+            <button class="btn-primary btn-full" onclick="handleFormSubmit()">Send Message →</button>
+            <div id="formSuccess" class="form-success" style="display:none;">✅ Message sent! I'll get back to you soon.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        <div class="footer-name">Beyar Bilonda · BSc Computer Science · Copperbelt University</div>
+        <div class="footer-copy">© 2025 · Built with passion</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
